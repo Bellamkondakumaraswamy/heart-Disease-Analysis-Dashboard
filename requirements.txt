@@ -1,0 +1,6 @@
+flask
+jupyter
+bootstramp
+pandas
+numpy
+tableau

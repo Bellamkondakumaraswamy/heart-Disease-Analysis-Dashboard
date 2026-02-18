@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container-fluid mt-4 px-4">
+
+    <!-- Dashboard Title -->
+    <div class="text-center mb-4">
+        <h2 class="fw-bold">Heart Disease Analysis Dashboard</h2>
+        <p class="text-muted">
+            Interactive and responsive Tableau dashboard for heart disease insights
+        </p>
+    </div>
+
+    <!-- Tableau Dashboard Embed -->
+    <div class="tableau-container mb-5">
+        <iframe 
+            src="https://public.tableau.com/views/HEARTDISEASEANALYSISDASHBOARD/Dashboard1?:showVizHome=no&:embed=true"
+            width="100%"
+            height="750"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    <!-- Insights Section -->
+    <div class="row justify-content-center mb-5">
+        <div class="col-lg-10">
+            <div class="card shadow-sm border-0 p-4">
+                <h4 class="mb-3 fw-semibold">Key Insights from the Dashboard</h4>
+                <ul class="mb-0">
+                    <li><strong>Age:</strong> Individuals aged above 50 show a higher risk of heart disease.</li>
+                    <li><strong>Gender:</strong> Male patients exhibit a slightly higher prevalence compared to females.</li>
+                    <li><strong>Blood Pressure:</strong> Elevated blood pressure strongly correlates with heart disease.</li>
+                    <li><strong>Cholesterol:</strong> High cholesterol levels significantly increase cardiovascular risk.</li>
+                    <li><strong>Diabetes:</strong> Diabetic patients are more prone to heart-related complications.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}

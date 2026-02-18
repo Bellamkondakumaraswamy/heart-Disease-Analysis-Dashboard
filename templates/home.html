@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container mt-5">
+
+    <div class="text-center mb-5">
+        <h1 class="display-4">Heart Disease Analysis System</h1>
+        <p class="lead">
+            A beginner-friendly data visualization project using Flask, Bootstrap, and Tableau.
+        </p>
+        <a href="/dashboard" class="btn btn-primary btn-lg mt-3">
+            View Dashboard
+        </a>
+    </div>
+
+    <!-- Features Section -->
+    <div class="row text-center mt-5">
+        
+        <div class="col-md-4 mb-4">
+            <div class="card shadow p-3">
+                <h4>📊 Data Visualization</h4>
+                <p>Interactive Tableau dashboard showing heart disease patterns.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card shadow p-3">
+                <h4>📈 Risk Factors</h4>
+                <p>Analysis based on Age, Gender, Blood Pressure, Cholesterol, and Diabetes.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card shadow p-3">
+                <h4>🎓 Academic Project</h4>
+                <p>Designed as a beginner portfolio project for learning Flask & data analytics.</p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
