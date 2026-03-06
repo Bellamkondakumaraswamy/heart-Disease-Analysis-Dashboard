@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title>Heart Disease Analysis – Notebook</title>
+
+    <!-- Required by Jupyter HTML -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+
+    <!-- ===============================
+         WEBSITE-STYLE NOTEBOOK CSS
+    ================================ -->
+    <style>
+        body {
+            background: #ffffff !important;
+            font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+            margin: 0;
+            padding: 30px 60px;
+            color: #212529;
+        }
+
+        /* Hide Jupyter UI */
+        .jp-InputPrompt,
+        .jp-OutputPrompt,
+        .jp-Toolbar,
+        .jp-NotebookPanel-toolbar,
+        .jp-NotebookPanel-notebookActions,
+        .lm-MenuBar,
+        .lm-CommandPalette {
+            display: none !important;
+        }
+
+        /* Layout */
+        .jp-Notebook,
+        .jp-NotebookPanel,
+        .container {
+            max-width: 1100px !important;
+            margin: auto !important;
+            padding: 0 !important;
+        }
+
+        /* Headings */
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            border-bottom: 2px solid #dee2e6;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-top: 35px;
+            font-weight: 600;
+        }
+
+        h3 {
+            font-size: 20px;
+            margin-top: 25px;
+            font-weight: 600;
+        }
+
+        /* Text */
+        p {
+            font-size: 16px;
+            line-height: 1.7;
+            margin: 12px 0;
+        }
+
+        /* Code blocks */
+        pre {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 16px;
+            border: 1px solid #dee2e6;
+            font-size: 14px;
+        }
+
+        /* Output highlight */
+        .jp-OutputArea-output {
+            background: #ffffff;
+            border-left: 4px solid #0d6efd;
+            padding: 16px;
+            margin: 20px 0;
+        }
+
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table th {
+            background: #0d6efd;
+            color: #ffffff;
+            padding: 10px;
+            text-align: left;
+        }
+
+        table td {
+            border: 1px solid #dee2e6;
+            padding: 10px;
+        }
+
+        /* Images */
+        img {
+            display: block;
+            max-width: 100%;
+            margin: 20px auto;
+        }
+
+        /* Controls bar */
+        #controls {
+            position: sticky;
+            top: 0;
+            background: #ffffff;
+            padding: 12px;
+            border-bottom: 1px solid #dee2e6;
+            text-align: right;
+            z-index: 1000;
+        }
+
+        .toggle-btn {
+            background: #0d6efd;
+            color: #ffffff;
+            border: none;
+            padding: 6px 14px;
+            margin-left: 8px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .toggle-btn:hover {
+            background: #0b5ed7;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- ===============================
+     OPTIONAL CONTROLS
+================================ -->
+<div id="controls">
+    <button class="toggle-btn" onclick="toggleCode()">Toggle Code</button>
+    <button class="toggle-btn" onclick="toggleOutput()">Toggle Output</button>
+</div>
+
+<!-- ===============================
+     JUPYTER NOTEBOOK CONTENT
+     (AUTO-GENERATED CONTENT
+      REMAINS BELOW THIS)
+================================ -->
+
+<!-- ⚠️ DO NOT DELETE NOTEBOOK CONTENT BELOW
+     This is where Jupyter's exported HTML lives
+-->
+
+<!-- ===============================
+     OPTIONAL TOGGLE SCRIPT
+================================ -->
+<script>
+    function toggleCode() {
+        document.querySelectorAll('pre').forEach(el => {
+            el.style.display = el.style.display === 'none' ? 'block' : 'none';
+        });
+    }
+
+    function toggleOutput() {
+        document.querySelectorAll('.jp-OutputArea-output').forEach(el => {
+            el.style.display = el.style.display === 'none' ? 'block' : 'none';
+        });
+    }
+</script>
+
+</body>
+</html>

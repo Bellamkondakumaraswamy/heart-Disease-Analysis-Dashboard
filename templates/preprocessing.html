@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container-fluid px-lg-4 fade-in-up">
+
+    <div class="text-center mb-5">
+        <h2 class="fw-bolder display-6">
+            <i class="fa-solid fa-laptop-code text-primary me-2"></i> Model Exploration
+        </h2>
+        <p class="text-muted fs-5">
+            Dive deep into our data preprocessing and initial machine learning experiments via Jupyter Notebook.
+        </p>
+        <div class="bg-primary mx-auto mt-3" style="width: 60px; height: 3px; border-radius: 2px;"></div>
+    </div>
+
+    <div class="card p-3 p-lg-4 border-0 rounded-4 shadow-lg mx-auto"
+        style="max-width: 1400px; background: rgba(30, 41, 59, 0.4); border: 1px solid var(--border-color) !important;">
+        <div class="ratio" style="height: 85vh;">
+            <iframe src="{{ url_for('static', filename='notebooks/heart_analysis.html') }}" class="rounded-4 border-0"
+                style="background: #ffffff;">
+            </iframe>
+        </div>
+    </div>
+
+</div>
+{% endblock %}

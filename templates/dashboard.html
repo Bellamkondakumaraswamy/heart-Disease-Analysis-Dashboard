@@ -2,39 +2,79 @@
 
 {% block content %}
 
-<div class="container-fluid mt-4 px-4">
+<div class="container-fluid px-lg-4">
 
     <!-- Dashboard Title -->
-    <div class="text-center mb-4">
-        <h2 class="fw-bold">Heart Disease Analysis Dashboard</h2>
-        <p class="text-muted">
-            Interactive and responsive Tableau dashboard for heart disease insights
+    <div class="text-center mb-5 fade-in-up">
+        <h2 class="fw-bolder display-6">Interactive Analysis Dashboard</h2>
+        <p class="text-muted fs-5">
+            Discover actionable insights into heart disease distributions through our live Tableau visualization
         </p>
+        <div class="bg-primary mx-auto" style="width: 60px; height: 3px; border-radius: 2px;"></div>
     </div>
 
     <!-- Tableau Dashboard Embed -->
-    <div class="tableau-container mb-5">
-        <iframe 
+    <div class="tableau-container mb-5 fade-in-up delay-1 mx-auto" style="max-width: 1400px;">
+        <iframe
             src="https://public.tableau.com/views/HEARTDISEASEANALYSISDASHBOARD/Dashboard1?:showVizHome=no&:embed=true"
-            width="100%"
-            height="750"
-            frameborder="0"
-            allowfullscreen>
+            width="100%" height="750" frameborder="0" allowfullscreen>
         </iframe>
     </div>
 
     <!-- Insights Section -->
-    <div class="row justify-content-center mb-5">
+    <div class="row justify-content-center mb-5 fade-in-up delay-2">
         <div class="col-lg-10">
-            <div class="card shadow-sm border-0 p-4">
-                <h4 class="mb-3 fw-semibold">Key Insights from the Dashboard</h4>
-                <ul class="mb-0">
-                    <li><strong>Age:</strong> Individuals aged above 50 show a higher risk of heart disease.</li>
-                    <li><strong>Gender:</strong> Male patients exhibit a slightly higher prevalence compared to females.</li>
-                    <li><strong>Blood Pressure:</strong> Elevated blood pressure strongly correlates with heart disease.</li>
-                    <li><strong>Cholesterol:</strong> High cholesterol levels significantly increase cardiovascular risk.</li>
-                    <li><strong>Diabetes:</strong> Diabetic patients are more prone to heart-related complications.</li>
-                </ul>
+            <div class="card border-0 p-lg-5 p-4 rounded-4 position-relative overflow-hidden">
+                <div class="position-absolute top-0 end-0 opacity-10 p-4">
+                    <i class="fa-solid fa-lightbulb fa-10x"></i>
+                </div>
+                <div class="position-relative z-index-1">
+                    <h4 class="mb-4 fw-bold fs-3 text-white">
+                        <i class="fa-solid fa-clipboard-list text-danger me-2"></i> Key Insights Unlocked
+                    </h4>
+                    <div class="row g-4 pt-2">
+                        <div class="col-md-6 d-flex align-items-start">
+                            <div class="fs-4 text-primary me-3 pt-1"><i class="fa-solid fa-person-cane"></i></div>
+                            <div>
+                                <h5 class="fw-bold text-white mb-1">Age Factor</h5>
+                                <p class="text-muted mb-0">Individuals aged above 50 display a notably higher risk of
+                                    heart disease complications.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex align-items-start">
+                            <div class="fs-4 text-info me-3 pt-1"><i class="fa-solid fa-venus-mars"></i></div>
+                            <div>
+                                <h5 class="fw-bold text-white mb-1">Gender Variance</h5>
+                                <p class="text-muted mb-0">Our analysis shows male patients exhibiting a slightly higher
+                                    overall prevalence compared to females.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex align-items-start">
+                            <div class="fs-4 text-danger me-3 pt-1"><i class="fa-solid fa-droplet"></i></div>
+                            <div>
+                                <h5 class="fw-bold text-white mb-1">Blood Pressure</h5>
+                                <p class="text-muted mb-0">Consistently elevated blood pressure levels correlate
+                                    strongly with early markers of heart disease.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex align-items-start">
+                            <div class="fs-4 text-warning me-3 pt-1"><i class="fa-solid fa-burger"></i></div>
+                            <div>
+                                <h5 class="fw-bold text-white mb-1">Cholesterol Risk</h5>
+                                <p class="text-muted mb-0">High cholesterol levels act as a significant multiplier for
+                                    cardiovascular risk across all demographics.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex align-items-start">
+                            <div class="fs-4 text-success me-3 pt-1"><i class="fa-solid fa-cubes-stacked"></i></div>
+                            <div>
+                                <h5 class="fw-bold text-white mb-1">Diabetes Interaction</h5>
+                                <p class="text-muted mb-0">Patients presenting with diabetes are exponentially more
+                                    prone to related heart complications.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

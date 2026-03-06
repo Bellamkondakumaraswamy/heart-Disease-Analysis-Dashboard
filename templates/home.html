@@ -2,39 +2,76 @@
 
 {% block content %}
 
-<div class="container mt-5">
+<div class="container py-4">
 
-    <div class="text-center mb-5">
-        <h1 class="display-4">Heart Disease Analysis System</h1>
-        <p class="lead">
-            A beginner-friendly data visualization project using Flask, Bootstrap, and Tableau.
-        </p>
-        <a href="/dashboard" class="btn btn-primary btn-lg mt-3">
-            View Dashboard
-        </a>
+    <!-- Hero Section -->
+    <div class="row align-items-center mb-5 fade-in-up">
+        <div class="col-lg-6 text-center text-lg-start mb-5 mb-lg-0">
+            <h1 class="display-4 fw-bolder mb-3">Unlocking the Power of <span
+                    style="background: var(--primary-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Cardiac
+                    Data</span></h1>
+            <p class="lead text-muted mb-4 fs-5">
+                A visually stunning and interactive approach to analyzing heart disease patterns. Designed for clarity,
+                depth, and actionable insights.
+            </p>
+            <div class="d-flex justify-content-center justify-content-lg-start gap-3">
+                <a href="/dashboard" class="btn btn-primary btn-lg shadow-lg">
+                    <i class="fa-solid fa-chart-line me-2"></i> View Dashboard
+                </a>
+                <a href="/story" class="btn btn-outline-primary btn-lg">
+                    <i class="fa-solid fa-book-open me-2"></i> Read Story
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-6 text-center position-relative">
+            <div class="position-absolute top-50 start-50 translate-middle rounded-circle bg-primary opacity-25 filter-blur"
+                style="width: 300px; height: 300px; filter: blur(50px); z-index: -1;"></div>
+            <img src="{{ url_for('static', filename='images/hero.png') }}"
+                class="img-fluid rounded-4 shadow-lg p-2 bg-dark bg-opacity-50 border border-secondary" alt="Hero Image"
+                style="transform: rotate(-2deg); max-height: 400px; object-fit: cover;">
+        </div>
     </div>
 
     <!-- Features Section -->
-    <div class="row text-center mt-5">
-        
-        <div class="col-md-4 mb-4">
-            <div class="card shadow p-3">
-                <h4>📊 Data Visualization</h4>
-                <p>Interactive Tableau dashboard showing heart disease patterns.</p>
+    <div class="row text-center mt-5 pt-4">
+        <div class="col-12 mb-4 fade-in-up delay-1">
+            <h2 class="fw-bold">Platform Features</h2>
+            <div class="bg-primary mx-auto mb-4" style="width: 60px; height: 3px; border-radius: 2px;"></div>
+        </div>
+
+        <div class="col-md-4 mb-4 fade-in-up delay-1">
+            <div class="card p-4 h-100 border-0 shadow-lg text-center">
+                <div class="icon-box bg-dark bg-opacity-50 text-white rounded-circle mx-auto d-flex align-items-center justify-content-center mb-3 border border-secondary"
+                    style="width: 70px; height: 70px; font-size: 24px;">
+                    <i class="fa-solid fa-chart-pie" style="color: #e11d48;"></i>
+                </div>
+                <h4 class="fw-bold mb-3">Interactive Visualization</h4>
+                <p class="text-muted">Explore deep Tableau-driven dashboards highlighting demographic data, disease
+                    prevalence, and critical warning signs.</p>
             </div>
         </div>
 
-        <div class="col-md-4 mb-4">
-            <div class="card shadow p-3">
-                <h4>📈 Risk Factors</h4>
-                <p>Analysis based on Age, Gender, Blood Pressure, Cholesterol, and Diabetes.</p>
+        <div class="col-md-4 mb-4 fade-in-up delay-2">
+            <div class="card p-4 h-100 border-0 shadow-lg text-center">
+                <div class="icon-box bg-dark bg-opacity-50 text-white rounded-circle mx-auto d-flex align-items-center justify-content-center mb-3 border border-secondary"
+                    style="width: 70px; height: 70px; font-size: 24px;">
+                    <i class="fa-solid fa-heart-crack" style="color: #f43f5e;"></i>
+                </div>
+                <h4 class="fw-bold mb-3">Risk Factor Analysis</h4>
+                <p class="text-muted">A deep dive into parameters like Age, Gender, Blood Pressure, Cholesterol, and
+                    Diabetes and their correlations.</p>
             </div>
         </div>
 
-        <div class="col-md-4 mb-4">
-            <div class="card shadow p-3">
-                <h4>🎓 Academic Project</h4>
-                <p>Designed as a beginner portfolio project for learning Flask & data analytics.</p>
+        <div class="col-md-4 mb-4 fade-in-up delay-3">
+            <div class="card p-4 h-100 border-0 shadow-lg text-center">
+                <div class="icon-box bg-dark bg-opacity-50 text-white rounded-circle mx-auto d-flex align-items-center justify-content-center mb-3 border border-secondary"
+                    style="width: 70px; height: 70px; font-size: 24px;">
+                    <i class="fa-solid fa-brain" style="color: #6366f1;"></i>
+                </div>
+                <h4 class="fw-bold mb-3">Predictive Modeling Setup</h4>
+                <p class="text-muted">Review our comprehensive Jupyter Notebook outlining data preprocessing and early
+                    machine learning exploration.</p>
             </div>
         </div>
 
